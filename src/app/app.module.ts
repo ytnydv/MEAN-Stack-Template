@@ -11,8 +11,8 @@ import { EmployeesComponent } from './employees/employees.component';
 import { JsonplaceholderComponent } from './jsonplaceholder/jsonplaceholder.component';
 
 import { JPostService } from './jsonplaceholder/service.service';
-import { PostsComponent } from './posts/posts.component';
-import { PostsService } from './posts.service';
+import { WinesComponent } from './wines/wines.component';
+import { WinesService } from './wines/wineservice.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { PostsService } from './posts.service';
     AboutComponent,
     EmployeesComponent,
     JsonplaceholderComponent,
-    PostsComponent
+    WinesComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +29,7 @@ import { PostsService } from './posts.service';
     HttpModule,
     routing
   ],
-  providers: [ JPostService, PostsService ],
+  providers: [ JPostService,  WinesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

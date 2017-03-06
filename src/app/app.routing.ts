@@ -4,12 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent} from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { JsonplaceholderComponent } from './jsonplaceholder/jsonplaceholder.component';
-import { PostsComponent } from './posts/posts.component';
+import { WinesComponent } from './wines/wines.component';
 
 const appRoutes: Routes = [
     {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        pathMatch: 'full'
     },
     {
         path: 'about',
@@ -20,8 +21,8 @@ const appRoutes: Routes = [
         component: JsonplaceholderComponent
     },
     {
-        path: 'posts',
-        component: PostsComponent
+        path: 'wines-page',
+        component: WinesComponent
     },    
     {
         path: '',
